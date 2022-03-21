@@ -1,0 +1,44 @@
+
+
+.Container{ 
+    margin: 0;
+
+     padding: 10px; 
+    /* background: linear-gradient(45deg,#d8581c, #1523c2f5); */
+    height: 100vh;
+     
+}
+.Container button{
+    border-radius: 15px;
+    border:none;
+    margin: 5px;
+    padding:5px;
+    width: 30vh;
+    background-color: rgb(10, 236, 236);
+    /* font-weight: 200; */
+    /* font-size: larger; */
+    cursor: pointer;
+}
+.Container h1{
+
+    border: solid;
+    background-color: palegoldenrod;
+    padding: 10px;
+}
+.Instruction
+  {   
+     margin-left: 450px; 
+     /* font-weight: bold; */
+     /* border: 2px solid rebeccapurple; */
+     width: 100vh;
+     /* display: inline-block; */
+     /* float: left; */
+     position: relative;
+     right: 25em;
+}
+
+.dont
+{   margin-top: 150px;
+    margin-left: 400px;
+    color: whitesmoke;
+}
