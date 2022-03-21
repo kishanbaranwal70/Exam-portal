@@ -1,0 +1,26 @@
+.CartSection{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    padding: 7px;
+    /* margin-bottom: 40px; */
+    
+    background-color: #1F2833;
+    
+}
+.Text{
+    font-weight: bold;
+    /* color: white; */
+ 
+}
+.Text2{
+    font-weight: bold;
+    /* color: white; */
+    color: rgb(214, 16, 16);
+}
+
+.CartSection img{
+    height: 30px;
+    width: 30px;
+}

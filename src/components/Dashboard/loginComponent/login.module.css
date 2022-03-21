@@ -1,0 +1,24 @@
+Input{
+    background: transparent;
+    background-color:none;
+}
+.Container{
+    background-color:transparent ;
+    /* width: min-content; */
+    /* background: rgba(255, 0, 0, 0.4); */
+}
+.Btn{
+    border-radius: 15px;
+    border:none;
+    margin: 5px;
+    padding:5px;
+    width: 30vh;
+    background-color: rgb(10, 236, 236);
+    /* font-weight: 200; */
+    /* font-size: larger; */
+    cursor: pointer;
+}
+.Btn:hover{
+    background-color: rgb(10, 172, 236);
+    padding: 7px;
+}

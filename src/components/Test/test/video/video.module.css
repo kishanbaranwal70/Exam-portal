@@ -1,0 +1,15 @@
+
+.Booth{
+    width: 300px;
+    height: 200px;
+    border : 2px  black;
+    /* float: right; */
+    /* background-color: #ccc; */
+    /* border: 1px solid #ddd; */ 
+     /* position: relative;
+     bottom: 205px; 
+     float: right;  */
+     margin: none
+     ;
+    overflow: hidden;
+}

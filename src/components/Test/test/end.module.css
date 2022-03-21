@@ -1,0 +1,39 @@
+.Btn{
+    background-color: rgb(78, 81, 82);
+    border-radius: 4px;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+         padding:3px;
+         margin: auto auto;
+         cursor: pointer;
+    }
+    .Btn:hover{
+        padding:5px;
+    }
+.Container{
+    background-color: rgb(16, 153, 177)
+    ;
+    position: absolute;
+    top: 0;
+    /* margin-top: 0; */
+    height: 100vh;
+    width: 100%;
+    
+}
+    .Container h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Container button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Container p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    

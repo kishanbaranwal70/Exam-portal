@@ -1,0 +1,50 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap'); */
+
+.Banner {
+    display: grid;
+    height: 100vh;
+    /* border: 2px solid red; */
+    background-color: #1f2833;
+    /* box-sizing: border-box;
+    box-shadow: darkgreen; */
+    align-content: center;
+    justify-content: center;
+}
+
+.BannerContent {
+    /* border: 2px solid oldlace; */
+    /* border:2px solid red; */
+    width: 150vh;
+    text-align: center;
+    height: 60vh;
+}
+.BannerContent button{
+    border-radius: 15px;
+    border:none;
+    margin: 5px;
+    padding:5px;
+    width: 30vh;
+    background-color: rgb(10, 236, 236);
+    /* font-weight: 200; */
+    font-size: larger;
+    cursor: pointer;
+    /* background-color: red; */
+}
+.BannerContent button:hover{
+    background-color: rgb(10, 172, 236);
+padding: 7px;
+}
+
+.BannerContent h1{
+    color: rgb(10, 236, 236);
+    /* font-s; */
+
+}
+.BannerContent p{
+    color: seashell;
+    font-size: larger;
+
+}
+/* *{
+    font-family: 'Ubuntu Condensed', sans-serif;
+} */

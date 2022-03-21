@@ -1,0 +1,30 @@
+.Item {
+    margin-left: 7px;
+    margin-right: 7px;
+    background-color: #1F2833;
+}
+
+.FooterSection
+{
+    text-align: center;
+    border-top: 10px solid rgb(10, 236, 236) ;
+    background-color: #1F2833;;
+}
+.FooterSection img{
+    height: 45px;
+    
+    width: 45px;
+}
+.Text{
+    font-weight: bold;
+    color: white;
+    /* color: rgb(10, 236, 236); */
+}
+.FooterTop{
+
+    display: flex;
+    text-align: center;
+    align-content: center;
+    background-color: #1F2833;;
+    justify-content: center;
+}

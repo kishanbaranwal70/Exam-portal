@@ -1,0 +1,12 @@
+.QuestionNo{
+    margin: 5px;
+    padding: 1px;
+    border: 1px solid blue;
+    border-radius: 50%;
+    height:30px;
+    width: 30px;
+    text-align: center;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}

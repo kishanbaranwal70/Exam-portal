@@ -1,0 +1,46 @@
+.Question {
+    /* border:1px solid black; */
+    padding: 11px;
+    font-size: 20px;
+    margin: 0;
+    /* background-color: thistle; */
+    /* border-radius: 5px; */
+    height: 87vh;
+}
+.Ques  button{
+ padding: 3px;
+ margin: 3px;
+ cursor: pointer;
+ border-radius: 5px ;
+}
+.Submit{
+background-color: rgb(88, 202, 53);
+border-radius: 4px;
+padding:3px;
+}
+.Next{
+    
+    border-radius: 4px;
+    background-color: rgb(53, 211, 211);
+    padding:3px;
+}
+.Clear{
+    border-radius: 4px;
+    background-color: rgb(209, 54, 54);
+padding:3px;
+}
+.Submit:hover{
+padding:4px;
+}
+.Next:hover{
+ padding:4px;
+}
+.Clear:hover{
+    padding:4px;
+}
+.Contact{
+    position: absolute;
+    bottom: 0px;
+    left : 2px;
+    font-size: small ;
+}
