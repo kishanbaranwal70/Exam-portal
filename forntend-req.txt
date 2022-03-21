@@ -1,0 +1,171 @@
+make token validity 1y in testing
+##############################################################
+admin login: 
+    1. req type: post
+    2. end point: /admin
+    3. response on success (status code 200)
+    {
+        data: done,
+        token: wgnetnh;rymh;erymj;,
+    }
+    4. response on failed (status code != 200)
+    {
+        data: failed,
+        msg: 'reason'
+    }
+    5. data you get from frontend in request
+    {
+        "username" : 'admin ka username',
+        "password" : 'admin ka password'
+    }
+#######################################################################
+
+student register 
+    1. req type post
+    2. end post /register [protected by admin login]
+    3. response on success (status code 200)
+    {
+        data: done,
+    }
+    4. response on failed (status code != 200)
+    {
+        data: failed,
+        msg: 'reason'
+    }
+    5.data you get from frontend in request
+    {
+        student info in json as asked from backend
+    }
+        with header
+        'Authorization': 'Bearer token(admin walla)'
+
+#############################################################################
+student login 
+    1. req type post
+    2. end post /studentLogin [protected by admin login]
+    3. response on success (status code 200)
+    {
+        data: done,
+        token: 'wrgfethyrsj',
+    }
+    4. response on failed (status code != 200)
+    {
+        data: failed,
+        msg: 'reason'
+    }
+    5.data you get from frontend in request
+    {
+        rollNo : 'roll no of student',
+        password: 'password of student'
+    }
+        with header
+        'Authorization': 'Bearer token(admin walla)'
+
+###############################################################################
+questions fetch
+    1. req type GET 
+    2. end post /questions [protected by admin login and student login]
+    3. response on success (status code 200)
+    {
+        data: [
+            {
+                "questionType": "1",
+                "questionCode" : 'this is option field must be html form',
+                "questionDesc": "what is question 1?",
+                "questionOption": ["1", "2", "3", "4"],
+                "questionNo": "1",
+            },
+            {
+                "questionType": "2",
+                "questionCode" : 'this is option field must be html form',
+                "questionDesc": "what is question 1 type 2?",
+                "questionOption": ["1", "2", "3", "4"],
+                "questionNo": "1",
+            },
+            {
+                "questionType": "3",
+                "questionDesc": "what is question 1 type 3?",
+                "questionCode" : 'this is option field must be html form'
+                "questionOption": ["1", "2", "3", "4"],
+                "questionNo": "1",
+            },
+            {
+                "questionType": "1",
+                "questionDesc": "what is question 2?",
+                "questionOption": ["1", "2", "3", "4"],
+                "questionCode" : '',
+                "questionNo": "2",
+            },
+            {
+                "questionType": "1",
+                "questionCode" : '',
+                "questionDesc": "what is question 3?",
+                "questionOption": ["1", "2", "3", "4"],
+                "questionNo": "3",
+            },
+            {
+                "questionType": "2",
+                "questionDesc": "what is question 2 type 2?",
+                "questionOption": ["1", "2", "3", "4"],
+                "questionNo": "2",
+            },
+            {
+                "questionType": "3",
+                "questionDesc": "what is question 2 typ 3?",
+                "questionOption": ["1", "2", "3", "4"],
+                "questionCode" : '',
+                "questionNo": "2",
+            },
+            {
+                "questionType": "3",
+                "questionDesc": "what is question 3 type 3?",
+                "questionCode" : '',
+                "questionOption": ["1", "2", "3", "4"],
+                "questionNo": "3",
+            }
+        ]
+    }
+    4. response on failed (status code != 200)
+    {
+        data: failed,
+        msg: 'reason'
+    }
+    5. on data in req
+    with header
+        'Authorization': 'Bearer token(admin walla)',
+        'Auth': 'Bearer token(student walla)'
+
+################################################################################
+question response
+    1. req type post
+    2. end post /response [protected by admin login and student]
+    3. response on success (status code 200)
+    {
+        data: done,
+    }
+    4. response on failed (status code != 200)
+    {
+        data: failed,
+        msg: 'reason'
+    }
+    5.data you get from frontend in request
+    {
+        currentOption : '1',
+        rollNo : 'rgwrhreyrujtr',
+        "questionType": "3",
+        "questionNo": "2",
+    }
+        with header
+        'Authorization': 'Bearer token(admin walla)'
+         Auth': 'Bearer token(student walla)'
+
+
+/adminapi/ faild par 
+{
+    "authentication failed": "unable to authenticate with given credentials"
+}
+wrong hai
+{
+    "data" : "failed",
+    "msg": "unable to authenticate with given credentials"
+}
